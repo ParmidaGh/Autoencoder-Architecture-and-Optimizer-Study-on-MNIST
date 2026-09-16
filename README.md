@@ -123,7 +123,7 @@ TMSE --> RANK --> VIZ
 ### Architectural Components
 
 | Layer              | Responsibility                                                        |
-| ------------------ | ---------------------------------------------------------------------- |
+| :------------------ | :---------------------------------------------------------------------- |
 | Data Layer         | Loading, normalizing, and splitting the MNIST dataset                  |
 | Network Layer      | Candidate autoencoder depths (1, 3, and 5 hidden layers)                |
 | Activation Layer   | Sigmoid and ReLU forward/backward transformations                      |
@@ -216,7 +216,7 @@ Training stops automatically once the validation MSE fails to improve by more th
 # Experimental Setup
 
 | Component               | Configuration                                            |
-| ------------------------ | --------------------------------------------------------- |
+| :------------------------ | :--------------------------------------------------------- |
 | Dataset                  | MNIST handwritten digits                                   |
 | Preprocessing            | Flattened to 784-d vectors, pixel values scaled to [0, 1] |
 | Train / Validation Split | 50,000 training images / 10,000 validation images         |
@@ -234,7 +234,7 @@ Training stops automatically once the validation MSE fails to improve by more th
 ### Test Set Reconstruction MSE by Configuration
 
 | Configuration                | Architecture                       | Activation | Learning Rate | Update Rule           | Test MSE   |
-| ----------------------------- | ----------------------------------- | ---------- | -------------- | ---------------------- | ---------- |
+| :----------------------------- | :----------------------------------- | :---------- | :-------------- | :---------------------- | :---------- |
 | Shallow-64                    | 784-64-784                          | Sigmoid    | 0.001           | Full-batch              | 0.1245     |
 | Shallow-128                   | 784-128-784                         | Sigmoid    | 0.001           | Full-batch              | 0.1269     |
 | Deep-3-Layer                  | 784-256-64-256-784                  | Sigmoid    | 0.001           | Full-batch              | 0.1744     |
@@ -256,12 +256,13 @@ Training stops automatically once the validation MSE fails to improve by more th
 
 # Project Structure
 
+```text
 From-Scratch-Autoencoder-Architecture-and-Optimizer-Study-on-MNIST
 │
 ├── mnist_autoencoder_from_scratch.ipynb # Main implementation notebook
 ├── requirements.txt # Dependencies
 └── README.md
-
+```
 
 ---
 
