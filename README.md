@@ -259,8 +259,7 @@ Training stops automatically once the validation MSE fails to improve by more th
 ```text
 From-Scratch-Autoencoder-Architecture-and-Optimizer-Study-on-MNIST
 │
-├── mnist_autoencoder_from_scratch.ipynb # Main implementation notebook
-├── requirements.txt # Dependencies
+├── mnist_autoencoder_from_scratch.ipynb
 └── README.md
 ```
 
