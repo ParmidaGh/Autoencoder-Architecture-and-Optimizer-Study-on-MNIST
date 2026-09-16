@@ -255,3 +255,55 @@ Training stops automatically once the validation MSE fails to improve by more th
 ---
 
 # Project Structure
+
+From-Scratch-Autoencoder-Architecture-and-Optimizer-Study-on-MNIST
+│
+├── mnist_autoencoder_from_scratch.ipynb # Main implementation notebook
+├── requirements.txt # Dependencies
+└── README.md
+
+
+---
+
+# Usage and Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/ParmidaGh/From-Scratch-Autoencoder-Architecture-and-Optimizer-Study-on-MNIST.git
+cd From-Scratch-Autoencoder-Architecture-and-Optimizer-Study-on-MNIST
+
+# 2. Create and activate environment
+conda create -n mnist-autoencoder python=3.10
+conda activate mnist-autoencoder
+
+# 3. Install dependencies
+pip install -r requirements.txt
+# Core deps: numpy, matplotlib, tensorflow
+```
+
+### Reproducibility
+
+To reproduce the results, run the cells of `mnist_autoencoder_from_scratch.ipynb` sequentially; MNIST is downloaded automatically via `tf.keras.datasets.mnist.load_data()`. Weight initialization is not seeded, so exact MSE values may vary slightly between runs while the overall ranking of configurations remains consistent.
+
+---
+
+# License
+
+This project is licensed under the MIT License.
+
+---
+
+## Author
+
+**Parmida Ghamari** M.Sc. Student, University of Tehran
+Research Assistant @ Social Networks Lab
+
+**Research Interests:** Deep Learning Fundamentals, Neural Network Optimization, Representation Learning (Autoencoders), NLP, Large Language Models (LLMs), Agentic AI, Retrieval-Augmented Generation (RAG)
+
+📧 [Parmida.ghamari@gmail.com](mailto:Parmida.ghamari@gmail.com) | 💻 [github.com/ParmidaGh](https://github.com/ParmidaGh) | 💼 [linkedin.com/in/parmida-ghamari](https://www.linkedin.com/in/parmida-ghamari)
+
+---
+
+<p align="center">
+Built using NumPy, Matplotlib, and TensorFlow
+</p>
